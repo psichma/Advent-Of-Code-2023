@@ -1,4 +1,4 @@
-package main
+package aoc_1
 
 import (
 	"errors"
@@ -103,8 +103,7 @@ func part2(line string) (int64) {
 	return num
 }
 
-func main() {
-	file_name := "input.txt"
+func Run(file_name string) {
 	content, err := load_file(file_name)
 	if err != nil {
 		log.Fatal(err)
